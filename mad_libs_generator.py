@@ -1,3 +1,5 @@
+print("LET'S PLAY!!!!")
+
 while True:
 
     color = input("Choose a color: ")
@@ -15,6 +17,11 @@ while True:
     print(f'{p_noun.capitalize()} are blue,')
     print(f'{noun.capitalize()} is {adjective.capitalize()},  ')
     print('and so are you.')
+
     print('==================================================================')
 
-    break
+    game_on = input("Do you want to play again? 'y' or 'n' ")
+    if game_on[0].lower() == 'y':
+        continue
+    else:
+        break
